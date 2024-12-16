@@ -22,7 +22,7 @@ const HomePage = () => {
 
       <main className="page-wrapper">
         <Context>
-          <HeaderTop />
+          {/* <HeaderTop /> */}
           <Header
             headerTransparent="header-not-transparent"
             headerSticky="header-sticky"
