@@ -1,0 +1,104 @@
+{
+  "footer": [
+    {
+      "desc": "2000+ Our clients are subscribe Around the World",
+      "title": "Newsletter",
+      "services": [
+        {
+          "title": "Services",
+          "top": true,
+          "innerItem": [
+            {
+              "link": "/text-generator",
+              "text": "Text Generator"
+            },
+            {
+              "link": "/vedio-generator",
+              "text": "Video Generator"
+            },
+            {
+              "link": "/code-generator",
+              "text": "HTML Generator"
+            },
+            {
+              "link": "/image-editor",
+              "text": "Photo Editor"
+            }
+          ]
+        }
+      ],
+      "products": [
+        {
+          "title": "Products",
+          "top": false,
+          "innerItem": [
+            {
+              "text": "About",
+              "link": "/utilize"
+            },
+            {
+              "text": "Roadmap",
+              "link": "/roadmap"
+            },
+            {
+              "text": "Contact",
+              "link": "/contact"
+            },
+            {
+              "text": "Terms Policy",
+              "link": "/terms-policy"
+            }
+          ]
+        }
+      ],
+      "company": [
+        {
+          "title": "Company",
+          "top": true,
+          "innerItem": [
+            {
+              "text": "Corporate",
+              "link": "#"
+            },
+            {
+              "text": "Portfolio",
+              "link": "#"
+            },
+            {
+              "text": "SEO Agency",
+              "link": "#"
+            },
+            {
+              "text": "Web Agency",
+              "link": "#"
+            }
+          ]
+        }
+      ],
+      "solutions": [
+        {
+          "title": "Solutions",
+          "top": false,
+          "innerItem": [
+            {
+              "text": "Gallery",
+              "link": "#"
+            },
+            {
+              "text": "Testimonial",
+              "link": "#"
+            },
+            {
+              "text": "Contact",
+              "link": "/blog-list"
+            },
+            {
+              "text": "Service",
+              "link": "#"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
