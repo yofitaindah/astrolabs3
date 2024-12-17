@@ -11,12 +11,15 @@ import "../node_modules/sal.js/dist/sal.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-tooltip/dist/react-tooltip.css";
-// ========= Plugins CSS END ========= 
+// ========= Plugins CSS END =========
 
 import "../public/scss/style.scss";
 import Loading from "@/components/Loading/Loading";
 
 import Context from "@/context/Context";
+
+import { Provider } from "react-redux";
+import { store } from "./../store/store";
 
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(false);
@@ -38,5 +41,15 @@ export default function App({ Component, pageProps }) {
     };
   }, []);
 
-  return <Context>{loading ? <Loading /> : <Component {...pageProps} />}</Context>;
+  return (
+    <Context>
+      {loading ? (
+        <Loading />
+      ) : (
+        <Provider store={store}>
+          <Component {...pageProps} />
+        </Provider>
+      )}
+    </Context>
+  );
 }
