@@ -15,7 +15,7 @@ export const generateImage = createAsyncThunk(
         size: "1024x1024",
       });
       console.log(completion.data);
-      const data = completion.choices[0]?.url;
+      const data = completion.data[0]?.url;
       return data || "No response generated.";
     } catch (error) {
       return rejectWithValue("Failed to fetch response.");
