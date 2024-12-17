@@ -34,14 +34,14 @@ const Service = () => {
                 data-sal-delay="100"
               >
                 <h4 className="subtitle">
-                  <span className="theme-gradient">GET IN TOUCH FOR FREE</span>
+                  <span className="theme-gradient">GET IN TOUCH</span>
                 </h4>
                 <h2 className="title w-600 mb--20">
-                  Instant Content Generation with AI
+                  Instant Content Generation with Astro Labs AI
                 </h2>
-                <p className="description b1">
+                {/* <p className="description b1">
                   Provide Descriptions, Get Instant AI-Generated Content
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

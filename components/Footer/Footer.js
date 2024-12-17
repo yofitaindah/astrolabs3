@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useAppContext } from "@/context/Context";
 
-import logo from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/logo/logo-dark.png";
+import logo from "../../public/images/logo/logo_astro.png";
+import logoDark from "../../public/images/logo/logo_astro.png";
 
 import FooterData from "../../data/footer.json";
 import SingleFooter from "./FooterProps/SingleFooter";
@@ -34,8 +34,7 @@ const Footer = () => {
                     </Link>
                   </div>
                   <p className="b1 text-center mt--20 mb--0">
-                    Create Website By ChatenAI So Quick Download And Make Your
-                    Site.
+                    Simplify Life with Astro Labs - Work Smarter, Save Time, and Achieve More!
                   </p>
                 </div>
               </div>
