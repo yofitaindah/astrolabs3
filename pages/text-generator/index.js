@@ -8,6 +8,7 @@ import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
 import Modal from "@/components/Common/Modal";
 import TextGenerator from "@/components/TextGenerator/TextGenerator";
 import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
+import ChatBot from "@/components/Chatbot/ChatBot";
 
 const TextGeneratorPage = () => {
   return (
@@ -27,9 +28,10 @@ const TextGeneratorPage = () => {
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
-                    <TextGenerator />
+                    {/* <TextGenerator /> */}
+                    <ChatBot />
                   </div>
-                  <StaticbarDashboard />
+                  {/* <StaticbarDashboard /> */}
                 </div>
               </div>
             </div>
