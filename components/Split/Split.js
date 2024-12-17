@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import splitImg from "../../public/images/split/astro_icon.png";
+import splitImg from "../../public/images/split/astro_icon.PNG";
 import Link from "next/link";
 
 const Split = () => {
