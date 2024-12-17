@@ -8,6 +8,7 @@ import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
 import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 import Modal from "@/components/Common/Modal";
+import ChatImageGenerator from "@/components/ChatImageGenerator/ChatImageGenerator";
 
 const ImageGeneratorPage = () => {
   return (
@@ -26,10 +27,11 @@ const ImageGeneratorPage = () => {
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
-                  <div className="content-page">
+                  <ChatImageGenerator />
+                  {/* <div className="content-page">
                     <ImageGenerator />
                   </div>
-                  <StaticbarDashboard />
+                  <StaticbarDashboard /> */}
                 </div>
               </div>
             </div>

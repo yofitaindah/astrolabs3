@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import chatReducer from './chatAiSlice';
+import chatReducer from "./chatAiSlice";
+import dalleReducer from "./chatImageGeneratorSlice";
 
 export const store = configureStore({
-    reducer: {
-        chat: chatReducer
-    }
-})
+  reducer: {
+    chat: chatReducer,
+    dalle: dalleReducer,
+  },
+});
