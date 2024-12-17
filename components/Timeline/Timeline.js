@@ -78,7 +78,7 @@ const Timeline = () => {
                     ))}
                 </div>
               </div>
-              <div className="button-group mt--50 text-center">
+              {/* <div className="button-group mt--50 text-center">
                 <Link className="btn-default btn-large" href="/text-generator">
                   Start writing for free
                 </Link>
@@ -92,7 +92,7 @@ const Timeline = () => {
                   </span>{" "}
                   See action in video
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

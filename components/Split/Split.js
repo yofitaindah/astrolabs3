@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import splitImg from "../../public/images/split/split-8.png";
+import splitImg from "../../public/images/split/astro_icon.png";
 import Link from "next/link";
 
 const Split = () => {
@@ -28,7 +28,7 @@ const Split = () => {
                       data-sal-duration="400"
                       data-sal-delay="200"
                     >
-                      Instant Content with AI
+                      Revolutionize AI Development with AstroLabs
                     </h4>
                     <p
                       className="description"
@@ -36,9 +36,7 @@ const Split = () => {
                       data-sal-duration="400"
                       data-sal-delay="300"
                     >
-                      Unlock Conversion-Driven Content: Business Bios, Facebook
-                      Ads, Product Descriptions, Emails, Landing Pages, Social
-                      Ads, and Beyond.
+                      Streamline AI Solutions: Data Processing, Model Training, Deployment, Monitoring, and More for Every Industry.
                     </p>
                     <ul
                       className="split-list"
@@ -46,9 +44,9 @@ const Split = () => {
                       data-sal-duration="400"
                       data-sal-delay="350"
                     >
-                      <li>- Craft Articles in Under 20 Seconds.</li>
-                      <li>- Reclaim Hundreds of Valuable Hours with AI</li>
-                      <li>- Elevate Copywriting with Rewriter.</li>
+                      <li>- Build and Deploy AI Models Effortlessly.</li>
+                      <li>- Simplify Complex Workflows with Intuitive Tools.</li>
+                      <li>- Scale Seamlessly with Cloud-Powered Infrastructure.</li>
                     </ul>
                     <div
                       className="view-more-button mt--35"

@@ -1,8 +1,8 @@
 {
   "footer": [
     {
-      "desc": "2000+ Our clients are subscribe Around the World",
-      "title": "Newsletter",
+      "desc": "Unlock your potential today!",
+      "title": "AstroLabs",
       "services": [
         {
           "title": "Services",
@@ -18,7 +18,7 @@
             },
             {
               "link": "/code-generator",
-              "text": "HTML Generator"
+              "text": "Image Generator"
             },
             {
               "link": "/image-editor",
@@ -29,7 +29,7 @@
       ],
       "products": [
         {
-          "title": "Products",
+          "title": "Supports",
           "top": false,
           "innerItem": [
             {
@@ -45,7 +45,7 @@
               "link": "/contact"
             },
             {
-              "text": "Terms Policy",
+              "text": "FaQ",
               "link": "/terms-policy"
             }
           ]
@@ -53,23 +53,15 @@
       ],
       "company": [
         {
-          "title": "Company",
+          "title": "Quick Link",
           "top": true,
           "innerItem": [
             {
-              "text": "Corporate",
+              "text": "Home",
               "link": "#"
             },
             {
-              "text": "Portfolio",
-              "link": "#"
-            },
-            {
-              "text": "SEO Agency",
-              "link": "#"
-            },
-            {
-              "text": "Web Agency",
+              "text": "Our Team",
               "link": "#"
             }
           ]
@@ -77,23 +69,23 @@
       ],
       "solutions": [
         {
-          "title": "Solutions",
+          "title": "Social Media",
           "top": false,
           "innerItem": [
             {
-              "text": "Gallery",
+              "text": "Twitter",
               "link": "#"
             },
             {
-              "text": "Testimonial",
+              "text": "Telegram",
               "link": "#"
             },
             {
-              "text": "Contact",
-              "link": "/blog-list"
+              "text": "Dextool",
+              "link": "#"
             },
             {
-              "text": "Service",
+              "text": "Dexscreen",
               "link": "#"
             }
           ]

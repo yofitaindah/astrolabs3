@@ -1,38 +1,38 @@
 {
   "service": [
     {
-      "title": "Effortless Content AI",
-      "desc": "Let our AI-powered service take the hard work out of content creation. Get started today with AI.",
+      "title": "AI Text Generator",
+      "desc": "Generate human-like text for blogs, websites, and more using advanced AI models powered by NLP and deep learning.",
       "icon": "activity",
       "delay": 100
     },
     {
-      "title": "Your Words, Our Tech",
-      "desc": "Discover how AI can transform your ideas into engaging with our qualitifull service for a better content.",
+      "title": "AI Image Generator",
+      "desc": "Create stunning visuals from text descriptions using AI-powered tools with advanced machine learning models like GANs or Diffusion Models.",
       "icon": "cast",
       "delay": 100
     },
     {
-      "title": "AI-Powered Writing",
-      "desc": "Access AI-generated content for your blogs, websites, and more with our qualitifull convenient service.",
+      "title": "AI Photo Editor",
+      "desc": "Enhance and transform photos effortlessly with AI-powered tools that automate professional-quality editing using advanced machine learning models.",
       "icon": "map",
       "delay": 200
     },
     {
-      "title": "AI Generation Simple",
-      "desc": "Experience the ease of content creation with our AI service. Write less, achieve more.",
+      "title": "AI Video Generator",
+      "desc": "Create, edit, and enhance videos effortlessly with AI-powered tools that automate high-quality production using advanced machine learning and NLP.",
       "icon": "loader",
       "delay": 100
     },
     {
-      "title": "Quality AI Content",
-      "desc": "Get professionally written content in no time with our AI service. Quality meets speed.",
+      "title": "AI Code Generator",
+      "desc": "Write, debug, and optimize code effortlessly with AI-powered tools that automate development using advanced machine learning models.",
       "icon": "speaker",
       "delay": 100
     },
     {
-      "title": "Your Writing Assistant",
-      "desc": "Collaborate with AI to generate content that resonates with your audience. Try it now.",
+      "title": "AI Voice Tools",
+      "desc": "Generate, modify, and analyze human-like speech effortlessly with AI-powered tools using deep learning and NLP for tasks like voice generation, transcription, and translation.",
       "icon": "terminal",
       "delay": 200
     }
@@ -187,33 +187,18 @@
   ],
   "accordion": [
     {
-      "title": "What is ChatenAI ? How does it work?",
+      "title": "What is Astrolabs?",
       "desc": "ChatenAI is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
       "isExpand": true
     },
     {
-      "title": "What kind of questions can I ask ChatenAI?",
+      "title": "How do you make purchases in Astrolabs?",
       "desc": "ChatenAI, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
       "isExpand": false
     },
     {
-      "title": "Can I get update regularly and For how long do I get updates?",
+      "title": "How to access Astrolabs?",
       "desc": "Yes, We will get update the ChatenAI. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
-      "isExpand": false
-    },
-    {
-      "title": "How can I get the customer support?",
-      "desc": "After purchasing the product need you any support you can be share with us with sending mail to rainbowit10@gmail.com.",
-      "isExpand": false
-    },
-    {
-      "title": "HIs my data safe with ChatenAI?",
-      "desc": "Feel free to toss any questions at chatenAI, just like you would with a human helper—whether it's about the weather, the latest news, restaurant suggestions, or anything else you fancy!",
-      "isExpand": false
-    },
-    {
-      "title": "Is ChatenAI available in multiple languages?",
-      "desc": "Yes, ChatenAI is designed to support multiple languages, offering a versatile and inclusive communication experience for users worldwide.",
       "isExpand": false
     }
   ]

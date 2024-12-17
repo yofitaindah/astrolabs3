@@ -10,12 +10,12 @@ const Copyright = () => {
             <div className="col-lg-6 col-md-8 col-sm-12 col-12">
               <div className="copyright-left">
                 <ul className="ft-menu link-hover">
-                  <li>
+                  {/* <li>
                     <Link href="/privacy-policy">Privacy Policy</Link>
                   </li>
                   <li>
                     <Link href="/terms-policy">Terms And Condition</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/contact">Contact Us</Link>
                   </li>
@@ -30,7 +30,7 @@ const Copyright = () => {
                     href="https://themeforest.net/user/rainbow-themes"
                     className="btn-read-more ps-2"
                   >
-                    <span>Rainbow-Themes.</span>
+                    <span>AstroLabs.</span>
                   </Link>
                 </p>
               </div>

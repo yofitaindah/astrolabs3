@@ -67,7 +67,7 @@ const Header = ({ headerTransparent, headerSticky, btnClass }) => {
                     className={`btn-default ${btnClass}`}
                     href="/text-generator"
                   >
-                    Get Started Free
+                    Connect Wallet
                   </Link>
                 </div>
 
