@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useAppContext } from "@/context/Context";
 
-import logoLight from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/logo/logo-dark.png";
+import logoLight from "../../public/images/logo/logo_astro.png";
+import logoDark from "../../public/images/logo/logo_astro.png";
 
 import Nav from "./Nav";
 import SmallNav from "./SmallNav";

@@ -18,12 +18,12 @@ const SmallNav = () => {
               <span>Welcome</span>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="/plans-billing">
               <i className="feather-briefcase"></i>
               <span>Manage Subsription</span>
             </Link>
-          </li>
+          </li> */}
         </ul>
         <div className="rbt-sm-separator"></div>
         <ul className="dashboard-mainmenu rbt-default-sidebar-list">
@@ -60,9 +60,9 @@ const SmallNav = () => {
               </li>
             ))}
         </ul>
-        <div className="rbt-sm-separator"></div>
+        {/* <div className="rbt-sm-separator"></div> */}
         <div className="mainmenu-nav">
-          <ul className="dashboard-mainmenu rbt-default-sidebar-list">
+          {/* <ul className="dashboard-mainmenu rbt-default-sidebar-list">
             <li className="has-submenu">
               <a
                 className="collapse-btn collapsed"
@@ -97,10 +97,10 @@ const SmallNav = () => {
                 <span>Help & FAQ</span>
               </a>
             </li>
-          </ul>
+          </ul> */}
 
-          <div className="rbt-sm-separator"></div>
-          <ul className="dashboard-mainmenu rbt-default-sidebar-list">
+          {/* <div className="rbt-sm-separator"></div> */}
+          {/* <ul className="dashboard-mainmenu rbt-default-sidebar-list">
             <li>
               <Link href="/release-notes">
                 <i className="feather-bell"></i>
@@ -113,7 +113,7 @@ const SmallNav = () => {
                 <span>Terms & Policy</span>
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </nav>
     </>

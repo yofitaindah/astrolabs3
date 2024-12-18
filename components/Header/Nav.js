@@ -61,7 +61,7 @@ const Nav = () => {
             </div>
           </div>
         </li> */}
-        <li className="with-megamenu has-menu-child-item position-relative">
+        {/* <li className="with-megamenu has-menu-child-item position-relative">
           <a
             href="#"
             onClick={() => setShowPage(!showPage)}
@@ -95,6 +95,15 @@ const Nav = () => {
               </div>
             </div>
           </div>
+        </li> */}
+        <li>
+          <Link href="/roadmap">Roadmap</Link>
+        </li>
+        <li>
+          <Link href="/team">Team</Link>
+        </li>
+        <li>
+          <Link href="/contact">Contact</Link>
         </li>
         {/* <li>
           <Link href="/pricing">Pricing</Link>

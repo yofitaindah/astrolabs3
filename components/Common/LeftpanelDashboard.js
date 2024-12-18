@@ -78,7 +78,7 @@ const LeftpanelDashboard = () => {
                   </ul>
                 </nav>
 
-                <div className="rbt-sm-separator"></div>
+                {/* <div className="rbt-sm-separator"></div> */}
 
                 {/* <nav className="mainmenu-nav">
                   <ul className="dashboard-mainmenu rbt-default-sidebar-list">
