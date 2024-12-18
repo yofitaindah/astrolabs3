@@ -1,36 +1,36 @@
+// components/Chat.js
 import { useState } from "react";
-import Image from "next/image";
-
 import { useDispatch, useSelector } from "react-redux";
 import {
-  fetchChatAiResponse,
   addUserMessage,
   addLoadingMessage,
-} from "../../store/chatAiSlice";
-
+  fetchCodeAiGenerator,
+} from "../../store/chatCodeGeneratorSlice";
+import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import ReactMarkdown from "react-markdown";
 import { isCodeBlock, renderHTML, renderList } from "../Converter/Converter";
+import { Tooltip } from "react-tooltip";
 
-export default function ChatBot() {
+const CodeGeneratorV2 = () => {
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
-  const { messages, loading, error } = useSelector((state) => state.chat);
+  const { messages, loading, error } = useSelector((state) => state.code);
 
   const sendMessage = () => {
     if (!input.trim()) return;
     console.log(input);
     dispatch(addUserMessage(input));
     dispatch(addLoadingMessage());
-    dispatch(fetchChatAiResponse(input));
+    dispatch(fetchCodeAiGenerator(input));
 
     setInput("");
   };
 
   return (
     <div style={{ width: "100%", margin: "auto" }}>
-      <h2>Text Generator with ChatenAI</h2>
+      <h2>Code Generator with ChatenAI</h2>
       <div
         style={{
           height: "calc(100vh - 300px)",
@@ -76,7 +76,7 @@ export default function ChatBot() {
                     : null}
                   {/* Render CSS/JS code with Syntax Highlighting */}
                   {isCodeBlock(ai.desc) && (
-                    <SyntaxHighlighter language="javascript" style={dark}>
+                    <SyntaxHighlighter language="javascript" style={atomDark}>
                       {ai.desc}
                     </SyntaxHighlighter>
                   )}
@@ -101,30 +101,38 @@ export default function ChatBot() {
               width={400}
               priority
             />
-            <p>Start a conversation with AstroLabsAI</p>
+            <p>Start a conversation with ChatenAI</p>
           </div>
         )}
       </div>
-      <div
+      <form
         className="small-search search-section mb--20"
         style={{ display: "flex", marginTop: "10px" }}
       >
         <input
           value={input}
+          className="border-gradient"
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type a message..."
           style={{ flex: 1, padding: "10px" }}
         />
+        <Tooltip id="my-tooltip" className="custom-tooltip tooltip-inner" />
+
         <button
+          type="submit"
           className="btn-default btn-small "
           onClick={sendMessage}
           disabled={loading}
           style={{ marginLeft: "10px" }}
+          data-tooltip-id="my-tooltip"
+          data-tooltip-content="Send message"
         >
           {loading ? "Loading..." : "Send"}
         </button>
-      </div>
+      </form>
       {error && <p style={{ color: "red" }}>Error: {error}</p>}
     </div>
   );
-}
+};
+
+export default CodeGeneratorV2;

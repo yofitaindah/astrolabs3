@@ -8,6 +8,7 @@ import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import Modal from "@/components/Common/Modal";
 import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
 import CodeGenerator from "@/components/CodeGenerator/CodeGenerator";
+import  CodeGeneratorV2 from '@/components/CodeGenerator/CodeGeneratorV2';
 
 const CodeGeneratorPage = () => {
   return (
@@ -26,10 +27,11 @@ const CodeGeneratorPage = () => {
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
-                  <div className="content-page">
-                    <CodeGenerator />
+                  <div className="content-page" style={{ padding: "24px 64px", height: "100%" }}>
+                    {/* <CodeGenerator /> */}
+                    <CodeGeneratorV2 />
                   </div>
-                  <StaticbarDashboard />
+                  {/* <StaticbarDashboard /> */}
                 </div>
               </div>
             </div>

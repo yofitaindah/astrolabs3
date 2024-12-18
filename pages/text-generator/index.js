@@ -27,7 +27,7 @@ const TextGeneratorPage = () => {
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
-                  <div className="content-page">
+                  <div className="content-page" style={{ padding: "24px 64px", height: "100%" }}>
                     {/* <TextGenerator /> */}
                     <ChatBot />
                   </div>
