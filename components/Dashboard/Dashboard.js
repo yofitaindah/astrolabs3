@@ -67,7 +67,7 @@ const Dashboard = () => {
 
             <div className="rbt-static-bar collapse-width">
               <Form />
-              <ul className="staticbar-btn-grp d-none d-md-flex">
+              {/* <ul className="staticbar-btn-grp d-none d-md-flex">
                 <li>
                   <button className="btn-default btn-small btn-border">
                     <span>Ask Tough Question</span>
@@ -88,7 +88,7 @@ const Dashboard = () => {
                     <span>Give Voice command</span>
                   </button>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

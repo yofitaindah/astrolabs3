@@ -135,7 +135,7 @@
       "isDisable": false,
       "type": "default",
       "img": "/images/generator-icon/text.png",
-      "text": "Text Generator",
+      "text": "AI Text Generator",
       "badge": "",
       "icon": ""
     },
@@ -144,8 +144,8 @@
       "isDisable": false,
       "type": "default",
       "img": "/images/generator-icon/photo.png",
-      "text": "Image Generator",
-      "badge": "Hot",
+      "text": "AI Image Generator",
+      "badge": "New",
       "icon": ""
     },
     {
@@ -153,8 +153,8 @@
       "isDisable": false,
       "type": "default",
       "img": "/images/generator-icon/code-editor.png",
-      "text": "Code Generator",
-      "badge": "",
+      "text": "AI Code Generator",
+      "badge": "Coming",
       "icon": ""
     },
     {
@@ -162,8 +162,8 @@
       "isDisable": false,
       "type": "default",
       "img": "/images/generator-icon/photo-editor.png",
-      "text": "Image Editor",
-      "badge": "",
+      "text": "AI Photo Editor",
+      "badge": "Coming",
       "icon": ""
     },
     {
@@ -171,17 +171,17 @@
       "isDisable": false,
       "type": "default",
       "img": "/images/generator-icon/video-camera.png",
-      "text": "Video Generator",
-      "badge": "",
+      "text": "AI Video Generator",
+      "badge": "Coming",
       "icon": ""
     },
     {
-      "link": "/email-generator",
+      "link": "#",
       "isDisable": false,
       "type": "default",
       "img": "/images/generator-icon/email.png",
-      "text": "Email Generator",
-      "badge": "",
+      "text": "AI Voice Tools",
+      "badge": "Coming",
       "icon": ""
     },
     {
@@ -189,7 +189,16 @@
       "isDisable": true,
       "type": "default",
       "img": "/images/generator-icon/website-design.png",
-      "text": "Website Generator",
+      "text": "AI Website Generator",
+      "badge": "Coming",
+      "icon": ""
+    },
+    {
+      "link": "#",
+      "isDisable": true,
+      "type": "default",
+      "img": "/images/generator-icon/website-design.png",
+      "text": "AI Trading Assistance",
       "badge": "Coming",
       "icon": ""
     },
