@@ -1,26 +1,16 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import OpenAI from "openai";
+import axios from "axios";
 
 export const fetchChatAiResponse = createAsyncThunk(
   "chatAi/fetchOpenAi",
   async (userMessage, { rejectWithValue }) => {
     try {
-      const openAi = new OpenAI({
-        apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
-        dangerouslyAllowBrowser: true,
-      });
-      const completion = await openAi.chat.completions.create({
-        model: "gpt-4o-mini",
-        messages: [
-          { role: "system", content: "You are a helpful assistant." },
-          {
-            role: "user",
-            content: userMessage,
-          },
-        ],
-      });
-      const data = completion.choices[0]?.message?.content;
-      return data || "No response generated.";
+      const result = await axios.post("/api/text-generator", { userMessage });
+      console.log(result);
+      if(result.status === 200) {
+        const data = result.data;
+        return data.choices[0]?.message?.content || "No response generated.";
+      }
     } catch (error) {
       return rejectWithValue("Failed to fetch response.");
     }
@@ -44,7 +34,6 @@ const chatAiSlice = createSlice({
         desc: action.payload,
         content: [],
       });
-
     },
     addLoadingMessage: (state) => {
       state.messages.push({

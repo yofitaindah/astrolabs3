@@ -1,22 +1,15 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import OpenAI from "openai";
+import axios from "axios";
 
 export const generateImage = createAsyncThunk(
   "chatAi/fetchOpenAi",
   async (userMessage, { rejectWithValue }) => {
     try {
-      const openAi = new OpenAI({
-        apiKey: process.env.NEXT_PUBLIC_OPENAI_API_KEY,
-        dangerouslyAllowBrowser: true,
-      });
-      const completion = await openAi.images.generate({
-        model: "dall-e-3",
-        prompt: userMessage,
-        size: "1024x1024",
-      });
-      console.log(completion.data);
-      const data = completion.data[0]?.url;
-      return data || "No response generated.";
+      const result = await axios.post("/api/image-generator", { userMessage, size: '1024x1024' });
+      if(result.status === 200) {
+        const data = result.data;
+        return data.data[0]?.url || "No response generated.";
+      }
     } catch (error) {
       return rejectWithValue("Failed to fetch response.");
     }
