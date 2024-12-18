@@ -39,45 +39,8 @@
   ],
   "navPageItem": [
     {
-      "link": "/styleguide",
-      "text": "Style Guide",
-      "badge": "Hot",
-      "isComing": false
-    },
-    {
-      "link": "/blog",
-      "text": "Blog",
-      "badge": "",
-      "isComing": false
-    },
-    {
-      "link": "/blog-details",
-      "text": "Blog Details",
-      "badge": "",
-      "isComing": false
-    },
-    {
-      "link": "/pricing",
-      "text": "Pricing",
-      "badge": "",
-      "isComing": false
-    },
-
-    {
       "link": "/contact",
       "text": "Contact",
-      "badge": "",
-      "isComing": false
-    },
-    {
-      "link": "/signin",
-      "text": "Sign In",
-      "badge": "",
-      "isComing": false
-    },
-    {
-      "link": "/signup",
-      "text": "Sign Up",
       "badge": "",
       "isComing": false
     },
@@ -96,18 +59,6 @@
     {
       "link": "/utilize",
       "text": "How to use",
-      "badge": "",
-      "isComing": false
-    },
-    {
-      "link": "/terms-policy",
-      "text": "Terms & Policy",
-      "badge": "",
-      "isComing": false
-    },
-    {
-      "link": "/privacy-policy",
-      "text": "Privacy Policy",
       "badge": "",
       "isComing": false
     }

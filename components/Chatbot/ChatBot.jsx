@@ -24,7 +24,7 @@ export default function ChatBot() {
 
   return (
     <div style={{ maxWidth: "100%", margin: "auto" }}>
-      <h2>Chat with ChatenAI</h2>
+      <h2>Chat with AstroLabsAI</h2>
       <div
         style={{
           height: "calc(100vh - 300px)",
@@ -69,7 +69,7 @@ export default function ChatBot() {
               width={400}
               priority
             />
-            <p>Start a conversation with ChatenAI</p>
+            <p>Start a conversation with AstroLabsAI</p>
           </div>
         )}
       </div>

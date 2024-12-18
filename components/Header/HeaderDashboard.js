@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useAppContext } from "@/context/Context";
 
-import logo from "../../public/images/logo/logo.png";
-import logoDark from "../../public/images/logo/logo-dark.png";
+import logo from "../../public/images/logo/logo_astro.png";
+import logoDark from "../../public/images/logo/logo_astro.png";
 import avatar from "../../public/images/team/team-01.jpg";
 
 import Nav from "./Nav";
@@ -65,14 +65,14 @@ const HeaderDashboard = ({ display }) => {
                   <Nav />
                 </nav>
 
-                <div className="header-btn d-none d-md-block">
+                {/* <div className="header-btn d-none d-md-block">
                   <Link
                     className="btn-default btn-small round"
                     href="/plans-billing"
                   >
                     Upgrade <i className="feather-zap"></i>
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="mobile-menu-bar mr--10 ml--10 d-block d-lg-none">
                   <div className="hamberger">
@@ -87,7 +87,7 @@ const HeaderDashboard = ({ display }) => {
 
                 <GridMenu ToolsData={ToolsData} />
 
-                <div className="account-access rbt-user-wrapper right-align-dropdown">
+                {/* <div className="account-access rbt-user-wrapper right-align-dropdown">
                   <div className="rbt-user ml--0">
                     <a className="admin-img" href="#">
                       <Image src={avatar} alt="Admin" />
@@ -96,7 +96,7 @@ const HeaderDashboard = ({ display }) => {
                   <div className="rbt-user-menu-list-wrapper">
                     <UserMenu />
                   </div>
-                </div>
+                </div> */}
 
                 <div className={`expand-btn-grp ${display}`}>
                   <button

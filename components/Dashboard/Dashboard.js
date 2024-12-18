@@ -15,12 +15,12 @@ const Dashboard = () => {
       <div className="rbt-main-content mr--0">
         <div className="rbt-daynamic-page-content">
           <div className="rbt-dashboard-content">
-            <div className="banner-area">
+            {/* <div className="banner-area">
               <BannerArea />
-            </div>
+            </div> */}
             <div className="content-page">
               <div className="chat-box-list">
-                <div className="welcome-wrapper">
+                {/* <div className="welcome-wrapper">
                   <div className="content-section">
                     <h4 className="title">👋 Welcome, RainbowIT</h4>
                   </div>
@@ -36,7 +36,7 @@ const Dashboard = () => {
                       <span>New Chat</span>
                     </a>
                   </div>
-                </div>
+                </div> */}
                 <div className="rainbow-generartor-section rainbow-section-gap">
                   <div
                     className="section-title text-center sal-animate"
@@ -45,7 +45,7 @@ const Dashboard = () => {
                     data-sal-delay="100"
                   >
                     <h4 className="subtitle ">
-                      <span className="theme-gradient">ChaetenAI</span>
+                      <span className="theme-gradient">AstroLabs AI</span>
                     </h4>
                     <h2 className="title w-600 mb--20">
                       Unleashing the Power of ChatAI

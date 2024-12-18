@@ -5,8 +5,8 @@ import React, { useEffect } from "react";
 
 import sal from "sal.js";
 
-import boxedLogo from "../../public/images/logo/boxed-logo.png";
-import boxedLogoLight from "../../public/images/logo/boxed-logo-light.png";
+import boxedLogo from "../../public/images/logo/logo_astro.png";
+import boxedLogoLight from "../../public/images/logo/logo_astro.png";
 import google from "../../public/images/sign-up/google.png";
 import facebook from "../../public/images/sign-up/facebook.png";
 

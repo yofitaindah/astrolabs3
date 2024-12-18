@@ -39,15 +39,6 @@ const LeftpanelDashboard = () => {
                         <span>Welcome</span>
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        className={isActive("/plans-billing") ? "active" : ""}
-                        href="/plans-billing"
-                      >
-                        <i className="feather-briefcase"></i>
-                        <span>Manage Subsription</span>
-                      </Link>
-                    </li>
                   </ul>
                   <div className="rbt-sm-separator"></div>
                   <ul className="dashboard-mainmenu rbt-default-sidebar-list">
@@ -89,7 +80,7 @@ const LeftpanelDashboard = () => {
 
                 <div className="rbt-sm-separator"></div>
 
-                <nav className="mainmenu-nav">
+                {/* <nav className="mainmenu-nav">
                   <ul className="dashboard-mainmenu rbt-default-sidebar-list">
                     <li className="has-submenu">
                       <a
@@ -135,12 +126,12 @@ const LeftpanelDashboard = () => {
                       </Link>
                     </li>
                   </ul>
-                </nav>
+                </nav> */}
               </div>
             </div>
           </div>
 
-          <div className="subscription-box">
+          {/* <div className="subscription-box">
             <div className="inner">
               <Link href="/profile-details" className="autor-info">
                 <div className="author-img active">
@@ -164,7 +155,7 @@ const LeftpanelDashboard = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="switcher-btn-gr inner-switcher">
             <button
               className={`${isLightTheme ? "active" : ""}`}
@@ -187,7 +178,7 @@ const LeftpanelDashboard = () => {
               className="ps-2"
               href="https://themeforest.net/user/rainbow-themes/portfolio"
             >
-              Rainbow Themes
+              AstroLabs
             </Link>
             .
           </p>

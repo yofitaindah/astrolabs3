@@ -30,7 +30,7 @@ export default function ChatImageGenerator() {
           width={600}
           priority
         />
-        <p>Generate image with ChatenAI</p>
+        <p>Generate image with AstroLabsAI</p>
       </div>
 
       {loading && <p>{loadingMessage}</p>}

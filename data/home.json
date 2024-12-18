@@ -188,17 +188,17 @@
   "accordion": [
     {
       "title": "What is Astrolabs?",
-      "desc": "ChatenAI is an AI-powered messaging platform that understands and responds to your natural language queries. Ask anything you'd typically ask a human assistant—get weather updates, news, restaurant recommendations, and more!",
+      "desc": "AstroLabs is an all-in-one artificial intelligence platform designed to revolutionize the way individuals and organizations harness the power of AI.",
       "isExpand": true
     },
     {
       "title": "How do you make purchases in Astrolabs?",
-      "desc": "ChatenAI, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
+      "desc": "Astrolabs, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
       "isExpand": false
     },
     {
       "title": "How to access Astrolabs?",
-      "desc": "Yes, We will get update the ChatenAI. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times. Our dedicated team works for update.",
+      "desc": "You can access the AstroLabs platform by visiting its official website at astrolabsai.com.",
       "isExpand": false
     }
   ]
