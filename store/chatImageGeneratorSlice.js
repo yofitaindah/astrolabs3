@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const generateImage = createAsyncThunk(
-  "chatAi/fetchOpenAi",
+  "generateImage/fetchOpenAi",
   async (userMessage, { rejectWithValue }) => {
     try {
       const result = await axios.post("/api/image-generator", { userMessage, size: '1024x1024' });

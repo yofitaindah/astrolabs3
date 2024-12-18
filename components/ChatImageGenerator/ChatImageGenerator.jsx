@@ -62,7 +62,10 @@ export default function ChatImageGenerator() {
           placeholder="Type a message..."
           style={{ maxWidth: "700px", minWidth: "320px" }}
         />
-        <div className="social-icon">
+        <div className="social-icon" style={{
+          display: "flex",
+          gap: '10px'
+        }}>
           <button
             className="btn-default btn-small "
             onClick={handleGenerate}
@@ -80,24 +83,6 @@ export default function ChatImageGenerator() {
           </button>
         </div>
       </div>
-
-      {/* <input
-        type="text"
-        placeholder="Enter a prompt"
-        value={prompt}
-        onChange={(e) => setPrompt(e.target.value)}
-        style={{ padding: "0.5rem", width: "300px", marginRight: "1rem" }}
-      /> */}
-      {/* <button onClick={handleGenerate} style={{ padding: "0.5rem" }}>
-        Generate
-      </button> 
-      <button
-      className="btn-default btn-border"
-        onClick={handleClear}
-        style={{ padding: "0.5rem", marginLeft: "1rem" }}
-      >
-        Clear
-      </button>*/}
     </div>
   );
 }

@@ -27,11 +27,11 @@ const ImageGeneratorPage = () => {
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
+                  <div style={{ padding: "24px 64px", height: "100%" }}>
                   <ChatImageGenerator />
-                  {/* <div className="content-page">
-                    <ImageGenerator />
+                    {/* <ImageGenerator /> */}
                   </div>
-                  <StaticbarDashboard /> */}
+                  {/* <<StaticbarDashboard /> */}
                 </div>
               </div>
             </div>

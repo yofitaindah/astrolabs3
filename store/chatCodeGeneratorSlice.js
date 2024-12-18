@@ -1,11 +1,11 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
-export const fetchChatAiResponse = createAsyncThunk(
+export const fetchCodeAiGenerator = createAsyncThunk(
   "chatAi/fetchOpenAi",
   async (userMessage, { rejectWithValue }) => {
     try {
-      const result = await axios.post("/api/text-generator", { userMessage });
+      const result = await axios.post("/api/code-generator", { userMessage });
       console.log(result);
       if (result.status === 200) {
         const data = result.data;
@@ -17,8 +17,8 @@ export const fetchChatAiResponse = createAsyncThunk(
   }
 );
 
-const chatAiSlice = createSlice({
-  name: "chatAi",
+const codeGeneratorSlice = createSlice({
+  name: "codeGenerator",
 
   initialState: {
     messages: [],
@@ -57,10 +57,10 @@ const chatAiSlice = createSlice({
 
   extraReducers: (builder) => {
     builder
-      .addCase(fetchChatAiResponse.pending, (state) => {
+      .addCase(fetchCodeAiGenerator.pending, (state) => {
         (state.loading = true), (state.error = null);
       })
-      .addCase(fetchChatAiResponse.fulfilled, (state, action) => {
+      .addCase(fetchCodeAiGenerator.fulfilled, (state, action) => {
         state.loading = false;
         const lastMessageIndex = state.messages.length - 1;
         if (lastMessageIndex >= 0) {
@@ -78,20 +78,8 @@ const chatAiSlice = createSlice({
             ],
           };
         }
-        // state.messages[state.messages.length - 1] = {
-        //   content: [
-        //     {
-        //       img: "",
-        //       text: "",
-        //       aiImg: "/images/team/avater.png",
-        //       title: "ChatenAI",
-        //       badge: "Bot",
-        //       desc: action.payload,
-        //     },
-        //   ],
-        // };
       })
-      .addCase(fetchChatAiResponse.rejected, (state, action) => {
+      .addCase(fetchCodeAiGenerator.rejected, (state, action) => {
         (state.loading = false),
           (state.error = action.payload),
           (state.messages[state.messages.length - 1] = {
@@ -110,5 +98,5 @@ const chatAiSlice = createSlice({
   },
 });
 
-export const { addUserMessage, addLoadingMessage } = chatAiSlice.actions;
-export default chatAiSlice.reducer;
+export const { addUserMessage, addLoadingMessage } = codeGeneratorSlice.actions;
+export default codeGeneratorSlice.reducer;
