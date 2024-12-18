@@ -40,10 +40,10 @@ const HomePage = () => {
           {/* <Pricing /> */}
           <Separator top={true} />
           <Accordion isHead={true} />
-          {/* <Separator top={false} /> */}
+          <Separator top={false} />
           {/* <Brands /> */}
-          {/* <Separator top={true} />
-          <CallToAction /> */}
+          {/* <Separator top={true} /> */}
+          <CallToAction />
 
           <Footer />
           <Copyright />

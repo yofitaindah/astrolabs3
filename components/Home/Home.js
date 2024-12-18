@@ -39,7 +39,7 @@ const Home = () => {
                 <p className="b1 desc-text">
                   All-in-One Artificial Intelligence Platform.
                 </p>
-                <div className="button-group">
+                {/* <div className="button-group">
                   <Link
                     className="btn-default bg-light-gradient btn-large"
                     href="/text-generator"
@@ -47,7 +47,7 @@ const Home = () => {
                     <div className="has-bg-light"></div>
                     <span>Start Now!</span>
                   </Link>
-                </div>
+                </div> */}
                 {/* <p className="color-gray mt--5">💳 No credit card required!</p> */}
               </div>
             </div>

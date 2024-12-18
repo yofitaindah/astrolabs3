@@ -30,7 +30,7 @@ const CallToAction = () => {
                           data-sal-duration="400"
                           data-sal-delay="200"
                         >
-                          Overcome Writer&apos;s Block Today
+                          Overcome Writer&apos;s Block Today in Astro Labs AI
                         </h2>
                         <p
                           className="description"
@@ -38,9 +38,9 @@ const CallToAction = () => {
                           data-sal-duration="400"
                           data-sal-delay="300"
                         >
-                          Gain Access to a Team of Copywriting Experts.
+                          Gain Experience of Artificial Intelligence.
                         </p>
-                        <div
+                        {/* <div
                           className="call-to-btn"
                           data-sal="slide-up"
                           data-sal-duration="400"
@@ -53,7 +53,7 @@ const CallToAction = () => {
                             <div className="has-bg-light"></div>
                             <span>Start writing for free</span>
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -85,7 +85,7 @@ const CallToAction = () => {
                               </div>
                               <h5 className="title">{data.title}</h5>
                               <span className="rainbow-demo-btn">
-                                Try It Now Free
+                                Try It Now!
                               </span>
                             </div>
                           </div>
