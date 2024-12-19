@@ -35,12 +35,9 @@ const Contact = () => {
                           <i className="feather-headphones"></i>
                         </div>
                         <div className="inner">
-                          <h4 className="title">Contact Phone Number</h4>
+                          <h4 className="title">Our Group</h4>
                           <p>
-                            <Link href="#">+444 555 666 777</Link>
-                          </p>
-                          <p>
-                            <Link href="#">+222 222 222 333</Link>
+                            <Link href="#">Telegram</Link>
                           </p>
                         </div>
                       </div>
@@ -54,12 +51,7 @@ const Contact = () => {
                           <h4 className="title">Our Email Address</h4>
                           <p>
                             <Link href="mailto:admin@gmail.com">
-                              admin@gmail.com
-                            </Link>
-                          </p>
-                          <p>
-                            <Link href="mailto:example@gmail.com">
-                              example@gmail.com
+                              team@astrolabsai.com
                             </Link>
                           </p>
                         </div>
@@ -71,10 +63,9 @@ const Contact = () => {
                           <i className="feather-map-pin"></i>
                         </div>
                         <div className="inner">
-                          <h4 className="title">Our Location</h4>
+                          <h4 className="title">Our Social Media</h4>
                           <p>
-                            5678 Bangla Main Road, cities 580 <br /> GBnagla,
-                            example 54786
+                            Twitter
                           </p>
                         </div>
                       </div>
@@ -85,10 +76,10 @@ const Contact = () => {
             </div>
 
             <div className="row mt--40 row--15">
-              <div className="col-lg-7">
+              {/* <div className="col-lg-7">
                 <ContactForm />
-              </div>
-              <div className="col-lg-5 mt_md--30 mt_sm--30">
+              </div> */}
+              {/* <div className="col-lg-5 mt_md--30 mt_sm--30">
                 <div className="google-map-style-1">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14554259.179133086!2d-105.54385245388013!3d37.49334218664659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1630777307491!5m2!1sen!2sbd"
@@ -99,7 +90,7 @@ const Contact = () => {
                     loading="lazy"
                   ></iframe>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
