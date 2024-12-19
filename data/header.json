@@ -278,12 +278,12 @@
       "badge": "NEW"
     },
     {
-      "link": "#",
+      "link": "/code-generator",
       "isDisable": false,
       "title": "AI Code Generator",
       "img": "/images/generator-icon/code-editor.png",
       "imgLight": "/images/light/generator-icon/code-editor.png",
-      "badge": "Coming"
+      "badge": "NEW"
     },
     {
       "link": "#",
