@@ -1,5 +1,4 @@
 // pages/api/openai/edit-image.js
-import { errors as formidableErrors } from "formidable";
 import fs from "fs";
 import path from "path";
 
