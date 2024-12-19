@@ -163,7 +163,7 @@
       "type": "default",
       "img": "/images/generator-icon/photo-editor.png",
       "text": "AI Photo Editor",
-      "badge": "Coming",
+      "badge": "New",
       "icon": ""
     },
     {
@@ -291,7 +291,7 @@
       "title": "AI Photo Editor",
       "img": "/images/generator-icon/photo-editor.png",
       "imgLight": "/images/light/generator-icon/photo-editor.png",
-      "badge": "Coming"
+      "badge": "New"
     },
     {
       "link": "#",
