@@ -19,7 +19,7 @@ const Nav = () => {
     <>
       <ul className="mainmenu">
         <li>
-          <Link href="/dashboard">Welcome</Link>
+          <Link href="/dashboard">App</Link>
         </li>
         {/* <li className="with-megamenu has-menu-child-item position-relative">
           <a
@@ -96,6 +96,9 @@ const Nav = () => {
             </div>
           </div>
         </li> */}
+        <li>
+          <Link href="/roadmap">Staking</Link>
+        </li>
         <li>
           <Link href="/roadmap">Roadmap</Link>
         </li>
