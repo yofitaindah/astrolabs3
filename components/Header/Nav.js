@@ -93,7 +93,7 @@ const Nav = () => {
           <Link href="/roadmap">Roadmap</Link>
         </li> */}
         <li>
-          <Link href="#">Documents</Link>
+          <Link href="https://docs.astrolabsai.com/">Documents</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
