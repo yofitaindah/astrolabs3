@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 
-import ContactForm from "./ContactForm";
 import sal from "sal.js";
 
 const Contact = () => {
