@@ -32,7 +32,7 @@ export default function ImageEditorV2() {
       alert("File size exceeds 4 MB.");
       return;
     }
-    setImage(e.target.files[0]);
+    setImage(URL.createObjectURL(file));
     const reader = new FileReader();
 
     reader.onload = () => {
@@ -66,7 +66,7 @@ export default function ImageEditorV2() {
       setLoading(false);
     }
   };
-
+  console.log('image', image);
   return (
     <div>
       <h1>Edit Image with AI</h1>
@@ -83,21 +83,17 @@ export default function ImageEditorV2() {
         </button>
       </div>
       {error && <p style={{ color: "red" }}>{error}</p>}
+      <div>
+        <h2>Current Image</h2>
+        {image && (
+          <Image src={image || ""} alt="Edited" height={400} width={400} />
+        )}
+      </div>
       {editedImage && (
         <>
           <div>
-            <h2>Current Image</h2>
-            <Image src={Image} alt="Edited" height={400} width={400} priority />
-          </div>
-          <div>
             <h2>Edited Image</h2>
-            <Image
-              src={editedImage}
-              alt="Edited"
-              height={400}
-              width={400}
-              priority
-            />
+            <Image src={editedImage} alt="Edited" height={400} width={400} />
           </div>
         </>
       )}
