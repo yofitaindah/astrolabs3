@@ -7,7 +7,7 @@ import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
 import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import Modal from "@/components/Common/Modal";
 import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
-import ImageEditor from "@/components/ImageEditor/ImageEditor";
+import ImageEditorV2 from "@/components/ImageEditor/ImageEditorV2";
 
 const ImageGeneratorPage = () => {
   return (
@@ -27,9 +27,10 @@ const ImageGeneratorPage = () => {
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
-                    <ImageEditor />
+                    {/* <ImageEditor /> */}
+                    <ImageEditorV2 />
                   </div>
-                  <StaticbarDashboard />
+                  {/* <StaticbarDashboard /> */}
                 </div>
               </div>
             </div>
