@@ -53,27 +53,13 @@ export default function ImageEditorV2() {
     setLoading(true);
     setError(null);
 
-    // const formData = new FormData();
-    // formData.append("image", image);
-    // formData.append("prompt", prompt);
-
     try {
-      const response = await axios.post("/api/edit-image2", {
+      const response = await axios.post("/api/edit-image", {
         base64Image,
         prompt,
       });
-      console.log(response);
-      console.log(response.data);
-      console.log(response.data.url);
       const img = response.data?.url;
       setEditedImage(img);
-
-      //   if (img) {
-      //     const response = await fetch(img);
-      //     const blob = await response.blob();
-      //     const imageUrl = URL.createObjectURL(blob);
-      //     setEditedImage(img);
-      //   }
     } catch (err) {
       setError("An error occurred while connecting to the server.");
     } finally {
