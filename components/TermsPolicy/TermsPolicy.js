@@ -9,38 +9,20 @@ const TermsPolicy = () => {
           <div className="rbt-dashboard-content">
             <div className="banner-area">
               <div className="settings-area">
-                <h3 className="title">Terms And Condition</h3>
+                <h3 className="title">How To Buy</h3>
               </div>
             </div>
             <div className="content-page pb--50">
               <div className="chat-box-list">
                 <div className="content">
-                  <h4>Welcome to ChatenAI Privacy Policy</h4>
-                  <ol>
+                  <h4>Create A Wallet</h4>
+                  {/* <ol> */}
                     <li>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur (the “Sites”).
+                      Download and set up your wallet of choice (we reccomend metamask.io). You can download the extension or use the mobile app at no cost. Ensure to keep your recovery phrase in a secure location.
                     </li>
-                    <li>
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                      voluptatem accusantium doloremque laudantium, totam rem
-                      aperiam, eaque ipsa quae ab illo inventore veritatis et
-                      quasi architecto beatae vitae dicta sunt explicabo.
-                    </li>
-                    <li>
-                      Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                      aut odit aut fugit, sed quia consequuntur magni dolores
-                      eos qui ratione voluptatem sequi nesciunt. Neque porro
-                      quisquam est, qui dolorem ipsum quia dolor sit amet,
-                      consectetur, adipisci velit, sed quia non numquam eius
-                      modi tempora incidunt ut labore et dolore magnam aliquam
-                      quaerat voluptatem.
-                    </li>
-                  </ol>
+                  {/* </ol> */}
+
+                  <br/>
 
                   <h4>The type of personal information we collect</h4>
 

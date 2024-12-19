@@ -37,16 +37,8 @@
               "link": "/utilize"
             },
             {
-              "text": "Roadmap",
-              "link": "/roadmap"
-            },
-            {
               "text": "Contact",
               "link": "/contact"
-            },
-            {
-              "text": "FaQ",
-              "link": "/terms-policy"
             }
           ]
         }
@@ -58,10 +50,6 @@
           "innerItem": [
             {
               "text": "Home",
-              "link": "#"
-            },
-            {
-              "text": "Our Team",
               "link": "#"
             }
           ]

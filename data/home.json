@@ -188,32 +188,27 @@
   "accordion": [
     {
       "title": "What is Astrolabs?",
-      "desc": "AstroLabs is an all-in-one artificial intelligence platform designed to revolutionize the way individuals and organizations harness the power of AI.",
+      "desc": "Astro Labs Platform AI is an innovative tool that uses artificial intelligence to simplify complex tasks, automate processes, and provide insights, empowering individuals and businesses to achieve their goals efficiently.",
       "isExpand": true
     },
     {
-      "title": "How do you make purchases in Astrolabs?",
-      "desc": "Astrolabs, an AI-driven messaging platform, adeptly communicates with users using natural language understanding. It delivers helpful responses to your inquiries and requests.",
+      "title": "Who can benefit from using Astro Labs?",
+      "desc": "Astro Labs Platform AI is designed for professionals, educators, developers, researchers, and organizations across various industries looking to enhance productivity and innovation through AI.",
       "isExpand": false
     },
     {
-      "title": "How to access Astrolabs?",
-      "desc": "You can access the AstroLabs platform by visiting its official website at astrolabsai.com.",
+      "title": "How does Astro Labs work?",
+      "desc": "The platform leverages advanced algorithms, machine learning, and natural language processing to analyze data, generate insights, and automate workflows.",
       "isExpand": false
     },
     {
-      "title": "How to access Astrolabs?",
-      "desc": "You can access the AstroLabs platform by visiting its official website at astrolabsai.com.",
+      "title": "Do I need prior experience with AI to use Astro Labs?",
+      "desc": "No prior experience is required. The platform is beginner-friendly and provides no-code options for easy adoption, while also offering advanced tools for experienced developers.",
       "isExpand": false
     },
     {
-      "title": "How to access Astrolabs?",
-      "desc": "You can access the AstroLabs platform by visiting its official website at astrolabsai.com.",
-      "isExpand": false
-    },
-    {
-      "title": "How to access Astrolabs?",
-      "desc": "You can access the AstroLabs platform by visiting its official website at astrolabsai.com.",
+      "title": "What are the key features of Astro Labs?",
+      "desc": "Key features include : AI Text Generator, AI Image Generator, AI Photo Editor, AI Video Generator, AI Code Generator, AI Voice Tools, AI Website Generator, AI Trading Assistance.",
       "isExpand": false
     }
   ]
