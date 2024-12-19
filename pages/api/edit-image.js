@@ -39,8 +39,6 @@ export default async function handler(req, res) {
     res.status(200).json({ url: imageUrl });
   } catch (err) {
     // example to check for a very specific error
-    if (err.code === formidableErrors.maxFieldsExceeded) {
-    }
     console.error(err);
     res.status(err.httpCode || 400).json({ error: err.message });
     return;
