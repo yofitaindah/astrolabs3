@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-import DashboardItem from "../../data/header.json";
 
-import menuImg from "../../public/images/menu-img/menu-img-2.png";
-import { useAppContext } from "@/context/Context";
 
 const Nav = () => {
-  const router = useRouter();
-  const { showItem, setShowItem } = useAppContext();
-  const [showPage, setShowPage] = useState(true);
-
-  const isActive = (href) => router.pathname === href;
 
   return (
     <>
