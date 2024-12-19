@@ -30,7 +30,7 @@ export default function ChatBot() {
 
   return (
     <div style={{ width: "100%", margin: "auto" }}>
-      <h2>Text Generator with ChatenAI</h2>
+      <h2>Text Generator with AstroLabs AI</h2>
       <div
         style={{
           height: "calc(100vh - 300px)",

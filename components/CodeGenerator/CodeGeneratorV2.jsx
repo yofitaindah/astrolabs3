@@ -30,7 +30,7 @@ const CodeGeneratorV2 = () => {
 
   return (
     <div style={{ width: "100%", margin: "auto" }}>
-      <h2>Code Generator with ChatenAI</h2>
+      <h2>Code Generator with AstroLabs AI</h2>
       <div
         style={{
           height: "calc(100vh - 300px)",
@@ -101,7 +101,7 @@ const CodeGeneratorV2 = () => {
               width={400}
               priority
             />
-            <p>Start a conversation with ChatenAI</p>
+            <p>Start a conversation with AstroLabs AI</p>
           </div>
         )}
       </div>
