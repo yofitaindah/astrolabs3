@@ -9,7 +9,7 @@ const Nav = () => {
     <>
       <ul className="mainmenu">
         <li>
-          <Link href="/dashboard">App</Link>
+          <Link href="/dashboard">AI Features</Link>
         </li>
         {/* <li className="with-megamenu has-menu-child-item position-relative">
           <a
@@ -87,13 +87,13 @@ const Nav = () => {
           </div>
         </li> */}
         <li>
-          <Link href="/roadmap">Staking</Link>
+          <Link href="#">Staking</Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/roadmap">Roadmap</Link>
-        </li>
+        </li> */}
         <li>
-          <Link href="/team">Team</Link>
+          <Link href="#">Documents</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
