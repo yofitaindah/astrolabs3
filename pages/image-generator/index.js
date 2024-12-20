@@ -21,7 +21,7 @@ const ImageGeneratorPage = () => {
             <HeaderDashboard display="" />
             <PopupMobileMenu />
             <LeftpanelDashboard />
-            <RightpanelDashboard />
+            {/* <RightpanelDashboard /> */}
             <Modal />
 
             <div className="rbt-main-content">
