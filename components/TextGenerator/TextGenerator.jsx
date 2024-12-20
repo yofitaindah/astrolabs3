@@ -24,9 +24,24 @@ const TextGenerator = () => {
       };
     });
   }, []);
+
+  console.log(messages);
   return (
     <>
+      {messages.length == 0 && (
+        <div className="chat-box-empty-list">
+          <Image
+            src={"/images/logo/logo_astro.png"}
+            alt="Logo astro"
+            height={600}
+            width={600}
+            priority
+          />
+          <p>Transform Your Imagination with AI</p>
+        </div>
+      )}
       {messages &&
+        messages.length > 0 &&
         messages.map((data, index) => (
           <div
             className="chat-box-list pt--30"
@@ -80,25 +95,27 @@ const TextGenerator = () => {
                     </div>
                   )}
 
-                  <div className="chat-section">
-                    <div className="author">
-                      <Image
-                        className="w-100"
-                        src="/images/logo/logo_astro.png"
-                        width={40}
-                        height={40}
-                        alt="Astrolab Logo"
-                      />
+                  {!loading && innerData.desc !== "" && (
+                    <div className="chat-section">
+                      <div className="author">
+                        <Image
+                          className="w-100"
+                          src="/images/logo/logo_astro.png"
+                          width={40}
+                          height={40}
+                          alt="Astrolab Logo"
+                        />
+                      </div>
+                      <div className="chat-content">
+                        <h6 className="title">
+                          AstroLabs
+                          <span className="rainbow-badge-card">Ai</span>
+                        </h6>
+                        <p className="mb--20">{innerData.desc}</p>
+                        {/* <Reaction /> */}
+                      </div>
                     </div>
-                    <div className="chat-content">
-                      <h6 className="title">
-                        AstroLabs
-                        <span className="rainbow-badge-card">Ai</span>
-                      </h6>
-                      <p className="mb--20">{innerData.desc}</p>
-                      {/* <Reaction /> */}
-                    </div>
-                  </div>
+                  )}
                 </div>
               ))}
             </div>
