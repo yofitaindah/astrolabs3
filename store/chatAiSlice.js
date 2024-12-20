@@ -78,18 +78,6 @@ const chatAiSlice = createSlice({
             ],
           };
         }
-        // state.messages[state.messages.length - 1] = {
-        //   content: [
-        //     {
-        //       img: "",
-        //       text: "",
-        //       aiImg: "/images/team/avater.png",
-        //       title: "ChatenAI",
-        //       badge: "Bot",
-        //       desc: action.payload,
-        //     },
-        //   ],
-        // };
       })
       .addCase(fetchChatAiResponse.rejected, (state, action) => {
         (state.loading = false),

@@ -6,9 +6,10 @@ export default async function handler(req, res) {
     const { userMessage, size } = req.body;
 
     const response = await openAi.images.generate({
-      model: "dall-e-3",
+      model: "dall-e-2",
       prompt: userMessage,
       size: size, 
+      n: 2,
       // "1024x1024",
     });
     // Example response

@@ -7,7 +7,6 @@ import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
 import Modal from "@/components/Common/Modal";
 import TextGenerator from "@/components/TextGenerator/TextGenerator";
-import ChatBot from "@/components/Chatbot/ChatBot";
 import Form from "@/components/TextGenerator/Form";
 
 const TextGeneratorPage = () => {
@@ -30,11 +29,8 @@ const TextGeneratorPage = () => {
                   <div
                     className="content-page"
                     >
-                    {/* style={{ padding: "24px 64px", height: "100%" }} */}
                     <TextGenerator />
-                    {/* <ChatBot /> */}
                   </div>
-                  {/* <StaticbarDashboard /> */}
                   <div className="rbt-static-bar">
                     <Form />
 

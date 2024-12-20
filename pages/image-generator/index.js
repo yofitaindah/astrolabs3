@@ -5,10 +5,9 @@ import HeaderDashboard from "@/components/Header/HeaderDashboard";
 import PopupMobileMenu from "@/components/Header/PopupMobileMenu";
 import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
 import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
-import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
-import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 import Modal from "@/components/Common/Modal";
-import ChatImageGenerator from "@/components/ChatImageGenerator/ChatImageGenerator";
+import Form from "@/components/ImageGenerator/Form";
+import ImageGenerator from "@/components/ImageGenerator/ImageGenerator";
 
 const ImageGeneratorPage = () => {
   return (
@@ -27,11 +26,19 @@ const ImageGeneratorPage = () => {
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
-                  <div style={{ padding: "24px 64px", height: "100%" }}>
-                  <ChatImageGenerator />
+                  <div  className="content-page">
+                    {/* <ChatImageGenerator /> */}
                     {/* <ImageGenerator /> */}
+                    <ImageGenerator />
                   </div>
-                  {/* <<StaticbarDashboard /> */}
+                  <div className="rbt-static-bar">
+                    <Form />
+
+                    <p className="b3 small-text">
+                      AstroLabsAI can make mistakes. Consider checking important
+                      information.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
