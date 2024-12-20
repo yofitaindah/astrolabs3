@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-
-import sal from "sal.js";
 import Image from "next/image";
 
+import { useSelector } from "react-redux";
 import TextGeneratorData from "../../data/dashboard.json";
+import sal from "sal.js";
 import Reaction from "../Common/Reaction";
 
 const TextGenerator = () => {
+  const { messages, loading, error } = useSelector((state) => state.chat);
+
   useEffect(() => {
     sal();
 
@@ -24,8 +26,8 @@ const TextGenerator = () => {
   }, []);
   return (
     <>
-      {TextGeneratorData &&
-        TextGeneratorData.textGenerator.map((data, index) => (
+      {messages &&
+        messages.map((data, index) => (
           <div
             className="chat-box-list pt--30"
             id="chatContainer"
@@ -42,7 +44,7 @@ const TextGenerator = () => {
                       className="w-100"
                       width={40}
                       height={40}
-                      src={data.author}
+                      src="/images/team/team-01.jpg"
                       alt="Author"
                     />
                   </div>
@@ -60,45 +62,41 @@ const TextGenerator = () => {
                   className="inner top-flashlight leftside light-xl"
                   key={innerIndex}
                 >
-                  <div className="chat-section generate-section">
-                    <div className="author">
-                      <Image
-                        src={innerData.img}
-                        width={40}
-                        height={40}
-                        alt="Loader Images"
-                      />
+                  {loading && (
+                    <div className="chat-section generate-section">
+                      <div className="author">
+                        <Image
+                          src={innerData.img}
+                          width={40}
+                          height={40}
+                          alt="Loader Images"
+                        />
+                      </div>
+                      <div className="chat-content">
+                        <h6 className="title color-text-off mb--0">
+                          {innerData.text}
+                        </h6>
+                      </div>
                     </div>
-                    <div className="chat-content">
-                      <h6 className="title color-text-off mb--0">
-                        {innerData.text}
-                      </h6>
-                    </div>
-                  </div>
+                  )}
+
                   <div className="chat-section">
                     <div className="author">
                       <Image
                         className="w-100"
-                        src={innerData.aiImg}
+                        src="/images/logo/logo_astro.png"
                         width={40}
                         height={40}
-                        alt="ChatenAI"
+                        alt="Astrolab Logo"
                       />
                     </div>
                     <div className="chat-content">
                       <h6 className="title">
-                        {innerData.title}
-                        <span className="rainbow-badge-card">
-                          {innerData?.badge}
-                        </span>
+                        AstroLabs
+                        <span className="rainbow-badge-card">Ai</span>
                       </h6>
-                      {innerData.desc2 ? (
-                        <p className="">{innerData.desc2}</p>
-                      ) : (
-                        ""
-                      )}
                       <p className="mb--20">{innerData.desc}</p>
-                      <Reaction />
+                      {/* <Reaction /> */}
                     </div>
                   </div>
                 </div>

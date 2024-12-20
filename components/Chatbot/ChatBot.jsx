@@ -97,6 +97,7 @@ export default function ChatBot() {
           <div style={{ textAlign: "center", margin: "auto" }}>
             <Image
               src={"/images/logo/logo_astro.png"}
+              alt="Logo astro"
               height={400}
               width={400}
               priority

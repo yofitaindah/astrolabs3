@@ -16,7 +16,7 @@ import { Tooltip } from "react-tooltip";
 const CodeGeneratorV2 = () => {
   const [input, setInput] = useState("");
   const dispatch = useDispatch();
-  const { messages, loading, error } = useSelector((state) => state.code);
+  const { codeMessages, loading, error } = useSelector((state) => state.code);
 
   const sendMessage = () => {
     if (!input.trim()) return;
@@ -38,13 +38,13 @@ const CodeGeneratorV2 = () => {
           background: "rgba(255, 255, 255, 0.1)",
           borderRadius: "10px",
           padding: "16px",
-          display: messages.length > 0 ? "block" : "flex",
+          display: codeMessages.length > 0 ? "block" : "flex",
           flexDirection: "column-reverse",
           gap: "10px",
         }}
       >
-        {messages.length > 0 &&
-          messages.map((msg, index) => (
+        {codeMessages.length > 0 &&
+          codeMessages.map((msg, index) => (
             <div
               key={index}
               style={{ marginBottom: "15px", marginTop: "22px" }}
@@ -93,10 +93,11 @@ const CodeGeneratorV2 = () => {
             </div>
           ))}
 
-        {messages.length == 0 && (
+        {codeMessages.length == 0 && (
           <div style={{ textAlign: "center", margin: "auto" }}>
             <Image
               src={"/images/logo/logo_astro.png"}
+              alt="Logo astro"
               height={400}
               width={400}
               priority

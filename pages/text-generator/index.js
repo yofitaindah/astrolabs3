@@ -7,8 +7,8 @@ import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
 import Modal from "@/components/Common/Modal";
 import TextGenerator from "@/components/TextGenerator/TextGenerator";
-import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
 import ChatBot from "@/components/Chatbot/ChatBot";
+import Form from "@/components/TextGenerator/Form";
 
 const TextGeneratorPage = () => {
   return (
@@ -27,11 +27,22 @@ const TextGeneratorPage = () => {
             <div className="rbt-main-content">
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
-                  <div className="content-page" style={{ padding: "24px 64px", height: "100%" }}>
-                    {/* <TextGenerator /> */}
-                    <ChatBot />
+                  <div
+                    className="content-page"
+                    >
+                    {/* style={{ padding: "24px 64px", height: "100%" }} */}
+                    <TextGenerator />
+                    {/* <ChatBot /> */}
                   </div>
                   {/* <StaticbarDashboard /> */}
+                  <div className="rbt-static-bar">
+                    <Form />
+
+                    <p className="b3 small-text">
+                      AstroLabsAI can make mistakes. Consider checking important
+                      information.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
