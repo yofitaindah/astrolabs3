@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchCodeAiGenerator = createAsyncThunk(
-  "chatAi/fetchOpenAi",
+  "codeGenerator/fetchOpenAi",
   async (userMessage, { rejectWithValue }) => {
     try {
       const result = await axios.post("/api/code-generator", { userMessage });
@@ -21,14 +21,14 @@ const codeGeneratorSlice = createSlice({
   name: "codeGenerator",
 
   initialState: {
-    messages: [],
+    codeMessages: [],
     loading: false,
     error: null,
   },
 
   reducers: {
     addUserMessage: (state, action) => {
-      state.messages.push({
+      state.codeMessages.push({
         author: "/images/team/team-01.jpg",
         title: "You",
         desc: action.payload,
@@ -36,10 +36,10 @@ const codeGeneratorSlice = createSlice({
       });
     },
     addLoadingMessage: (state) => {
-      const lastMessageIndex = state.messages.length - 1;
+      const lastMessageIndex = state.codeMessages.length - 1;
       if (lastMessageIndex >= 0) {
-        state.messages[lastMessageIndex] = {
-          ...state.messages[lastMessageIndex], // Preserve existing properties if needed
+        state.codeMessages[lastMessageIndex] = {
+          ...state.codeMessages[lastMessageIndex], // Preserve existing properties if needed
           content: [
             {
               img: "/images/icons/loader-one.gif",
@@ -62,10 +62,10 @@ const codeGeneratorSlice = createSlice({
       })
       .addCase(fetchCodeAiGenerator.fulfilled, (state, action) => {
         state.loading = false;
-        const lastMessageIndex = state.messages.length - 1;
+        const lastMessageIndex = state.codeMessages.length - 1;
         if (lastMessageIndex >= 0) {
-          state.messages[lastMessageIndex] = {
-            ...state.messages[lastMessageIndex], // Preserve existing properties if needed
+          state.codeMessages[lastMessageIndex] = {
+            ...state.codeMessages[lastMessageIndex], // Preserve existing properties if needed
             content: [
               {
                 img: "",
@@ -82,7 +82,7 @@ const codeGeneratorSlice = createSlice({
       .addCase(fetchCodeAiGenerator.rejected, (state, action) => {
         (state.loading = false),
           (state.error = action.payload),
-          (state.messages[state.messages.length - 1] = {
+          (state.codeMessages[state.codeMessages.length - 1] = {
             content: [
               {
                 img: "",

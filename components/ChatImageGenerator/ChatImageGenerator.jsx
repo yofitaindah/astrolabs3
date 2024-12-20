@@ -26,6 +26,7 @@ export default function ChatImageGenerator() {
       <div style={{ textAlign: "center", margin: "auto" }}>
         <Image
           src={"/images/logo/logo_astro.png"}
+          alt="Logo astro"
           height={600}
           width={600}
           priority
