@@ -2,9 +2,11 @@ import React, { useEffect } from "react";
 import Image from "next/image";
 
 import { useSelector } from "react-redux";
-import TextGeneratorData from "../../data/dashboard.json";
+import { isCodeBlock, renderHTML, renderList } from "../Converter/Converter";
 import sal from "sal.js";
-import Reaction from "../Common/Reaction";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+import ReactMarkdown from "react-markdown";
 
 const TextGenerator = () => {
   const { messages, loading, error } = useSelector((state) => state.chat);
@@ -111,8 +113,37 @@ const TextGenerator = () => {
                           AstroLabs
                           <span className="rainbow-badge-card">Ai</span>
                         </h6>
-                        <p className="mb--20">{innerData.desc}</p>
-                        {/* <Reaction /> */}
+                        <p className="mb--20">
+                          {/* Render lists */}
+                          {!isCodeBlock(innerData.desc) &&
+                            !innerData.desc.includes("<html>") &&
+                            !innerData.desc.includes("-") && (
+                              <div>{renderList(innerData.desc)}</div>
+                            )}
+                          {/* Render HTML content */}
+                          {innerData.desc.includes("<html>") ||
+                          innerData.desc.includes("<body>") ||
+                          innerData.desc.includes("<head>")
+                            ? renderHTML(innerData.desc)
+                            : null}
+                          {/* Render CSS/JS code with Syntax Highlighting */}
+                          {isCodeBlock(innerData.desc) && (
+                            <SyntaxHighlighter
+                              language="javascript"
+                              style={atomDark}
+                            >
+                              {innerData.desc}
+                            </SyntaxHighlighter>
+                          )}
+                          {/* Render Markdown (if OpenAI returns markdown-formatted text) */}
+                          {innerData.desc &&
+                            !innerData.desc.includes("<html>") &&
+                            !innerData.desc.includes("<pre><code>") &&
+                            !innerData.desc.includes("```") && (
+                              <ReactMarkdown>{innerData.desc}</ReactMarkdown>
+                            )}
+                        </p>
+                        {/* <Reaction />  */}
                       </div>
                     </div>
                   )}
