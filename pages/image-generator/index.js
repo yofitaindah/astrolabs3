@@ -27,8 +27,6 @@ const ImageGeneratorPage = () => {
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
                   <div  className="content-page">
-                    {/* <ChatImageGenerator /> */}
-                    {/* <ImageGenerator /> */}
                     <ImageGenerator />
                   </div>
                   <div className="rbt-static-bar">
