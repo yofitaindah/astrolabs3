@@ -8,6 +8,8 @@ import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import Modal from "@/components/Common/Modal";
 import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
 import ImageEditorV2 from "@/components/ImageEditor/ImageEditorV2";
+import ImageEditor from "@/components/ImageEditor/ImageEditor";
+import Form from "@/components/ImageEditor/Form";
 
 const ImageGeneratorPage = () => {
   return (
@@ -27,10 +29,18 @@ const ImageGeneratorPage = () => {
               <div className="rbt-daynamic-page-content">
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
-                    {/* <ImageEditor /> */}
-                    <ImageEditorV2 />
+                    <ImageEditor />
+                    {/* <ImageEditorV2 /> */}
                   </div>
                   {/* <StaticbarDashboard /> */}
+                  <div className="rbt-static-bar">
+                    <Form />
+
+                    <p className="b3 small-text">
+                      AstroLabsAI can make mistakes. Consider checking important
+                      information.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

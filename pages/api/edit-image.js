@@ -36,7 +36,7 @@ export default async function handler(req, res) {
     // Cleanup: Delete the temporary file
     fs.unlinkSync(filePath);
     
-    res.status(200).json({ url: imageUrl });
+    res.status(200).json({ data: response.data });
   } catch (err) {
     // example to check for a very specific error
     console.error(err);
