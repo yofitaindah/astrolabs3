@@ -286,7 +286,7 @@
       "badge": "NEW"
     },
     {
-      "link": "#",
+      "link": "/image-editor",
       "isDisable": false,
       "title": "AI Photo Editor",
       "img": "/images/generator-icon/photo-editor.png",
