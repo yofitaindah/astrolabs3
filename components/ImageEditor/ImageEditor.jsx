@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import sal from "sal.js";
 import Image from "next/image";
 
-import ImageGeneratorData from "../../data/dashboard.json";
-import Reaction from "../Common/Reaction";
 import { useSelector } from "react-redux";
 
 const ImageEditor = () => {

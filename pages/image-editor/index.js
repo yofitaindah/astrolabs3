@@ -6,8 +6,6 @@ import PopupMobileMenu from "@/components/Header/PopupMobileMenu";
 import LeftpanelDashboard from "@/components/Common/LeftpanelDashboard";
 import RightpanelDashboard from "@/components/Common/RightpanelDashboard";
 import Modal from "@/components/Common/Modal";
-import StaticbarDashboard from "@/components/Common/StaticbarDashboard";
-import ImageEditorV2 from "@/components/ImageEditor/ImageEditorV2";
 import ImageEditor from "@/components/ImageEditor/ImageEditor";
 import Form from "@/components/ImageEditor/Form";
 
@@ -30,9 +28,7 @@ const ImageGeneratorPage = () => {
                 <div className="rbt-dashboard-content">
                   <div className="content-page">
                     <ImageEditor />
-                    {/* <ImageEditorV2 /> */}
                   </div>
-                  {/* <StaticbarDashboard /> */}
                   <div className="rbt-static-bar">
                     <Form />
 
