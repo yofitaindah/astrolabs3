@@ -30,7 +30,7 @@ const TextGenerator = () => {
   console.log(messages);
   return (
     <>
-      {messages.length == 0 && (
+      {messages && messages.length == 0 && (
         <div className="chat-box-empty-list">
           <Image
             src={"/images/logo/logo_astro.png"}
