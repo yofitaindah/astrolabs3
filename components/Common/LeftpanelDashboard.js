@@ -43,7 +43,7 @@ const LeftpanelDashboard = () => {
                   <div className="rbt-sm-separator"></div>
                   <ul className="dashboard-mainmenu rbt-default-sidebar-list">
                     {HeaderData &&
-                      HeaderData.leftPanel.slice(0, 7).map((data, index) => (
+                      HeaderData.leftPanel.slice(0, 25).map((data, index) => (
                         <li key={index}>
                           <Link
                             href={data.link}

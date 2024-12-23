@@ -319,7 +319,7 @@
     },
     {
       "link": "#",
-      "isDisable": true,
+      "isDisable": false,
       "title": "AI Trading Assistance",
       "img": "/images/generator-icon/code-editor.png",
       "imgLight": "/images/light/generator-icon/lyrics.png",
