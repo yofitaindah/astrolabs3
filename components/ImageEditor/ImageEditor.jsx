@@ -127,7 +127,7 @@ const ImageEditor = () => {
                               src={"/images/logo/logo_kecil.PNG"}
                               width={40}
                               height={40}
-                              alt="ChatenAI"
+                              alt="AstroLabs"
                             />
                           </div>
                           {!loading && innerData.generateImg && (

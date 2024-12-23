@@ -62,7 +62,7 @@ const CodeGeneratorV2 = () => {
                     width="40"
                     height={40}
                   />{" "}
-                  <strong>{ai.title}</strong> ({ai.badge})
+                  <strong>AstroLabs</strong> <span className="rainbow-badge-card">Ai</span>
                   {/* <p>{ai.text || ai.desc}</p> */}
                   {/* Render lists */}
                   {!isCodeBlock(ai.desc) &&

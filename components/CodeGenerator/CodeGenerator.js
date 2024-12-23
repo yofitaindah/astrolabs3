@@ -120,7 +120,7 @@ npm install axios`;
                   src={avatar}
                   width={40}
                   height={40}
-                  alt="ChatenAI"
+                  alt="Codelabs"
                 />
               </div>
               <div className="chat-content">
@@ -189,7 +189,7 @@ npm install axios`;
                   src={avatar}
                   width={40}
                   height={40}
-                  alt="ChatenAI"
+                  alt="AstroLabs"
                 />
               </div>
               <div className="chat-content">

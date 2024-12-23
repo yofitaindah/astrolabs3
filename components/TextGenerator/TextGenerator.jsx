@@ -27,7 +27,6 @@ const TextGenerator = () => {
     });
   }, []);
 
-  console.log(messages);
   return (
     <>
       {messages && messages.length == 0 && (
@@ -102,7 +101,7 @@ const TextGenerator = () => {
                       <div className="author">
                         <Image
                           className="w-100"
-                          src="/images/logo/logo_astro.png"
+                          src="/images/logo/logo_kecil.PNG"
                           width={40}
                           height={40}
                           alt="Astrolab Logo"
