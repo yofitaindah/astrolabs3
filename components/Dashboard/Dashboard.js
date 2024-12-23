@@ -48,10 +48,10 @@ const Dashboard = () => {
                       <span className="theme-gradient">AstroLabs AI</span>
                     </h4>
                     <h2 className="title w-600 mb--20">
-                      Unleashing the Power of ChatAI
+                      Unleashing the Power of Astro Labs AI
                     </h2>
                     <p className="description b1">
-                      We provide Mastering the Art of ChatAI generate your text{" "}
+                      We provide Mastering the Art of Astro Labs AI generate your text{" "}
                       <br />
                       Pioneering Conversations with AI.
                     </p>
