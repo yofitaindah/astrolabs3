@@ -71,7 +71,7 @@ const chatAiSlice = createSlice({
                 text: "",
                 aiImg: "/images/team/avater.png",
                 title: "Astrolabs",
-                badge: "Bot",
+                badge: "Ai",
                 desc: action.payload, // Add the payload as the description
               },
             ],
