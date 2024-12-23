@@ -48,3 +48,6 @@ git pull origin main
 docker-compose down
 docker-compose up --build -d
 sudo systemctl start nginx
+
+## Optional when wanna clear all
+docker system prune --all
