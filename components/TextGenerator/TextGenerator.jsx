@@ -112,7 +112,7 @@ const TextGenerator = () => {
                           AstroLabs
                           <span className="rainbow-badge-card">Ai</span>
                         </h6>
-                        <p className="mb--20">
+                        <div className="mb--20">
                           {/* Render lists */}
                           {!isCodeBlock(innerData.desc) &&
                             !innerData.desc.includes("<html>") &&
@@ -141,7 +141,7 @@ const TextGenerator = () => {
                             !innerData.desc.includes("```") && (
                               <ReactMarkdown>{innerData.desc}</ReactMarkdown>
                             )}
-                        </p>
+                        </div>
                         {/* <Reaction />  */}
                       </div>
                     </div>
