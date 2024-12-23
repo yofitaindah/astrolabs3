@@ -62,19 +62,23 @@
           "innerItem": [
             {
               "text": "Twitter",
-              "link": "#"
+              "link": "https://x.com/AstroLabs_AI"
             },
             {
               "text": "Telegram",
-              "link": "#"
+              "link": "https://t.me/AstrolabsAI"
             },
             {
               "text": "Dextool",
-              "link": "#"
+              "link": "https://www.dextools.io/app/en/ether/pair-explorer/0x8065297d67368bcbe7fe797be7c337955150d851"
             },
             {
               "text": "Dexscreen",
-              "link": "#"
+              "link": "https://dexscreener.com/ethereum/0x8065297d67368bcbe7fe797be7c337955150d851"
+            },
+            {
+              "text": "Medium",
+              "link": "https://astrolabs-ai.medium.com/"
             }
           ]
         }
