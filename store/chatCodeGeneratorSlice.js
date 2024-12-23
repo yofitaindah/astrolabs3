@@ -6,7 +6,6 @@ export const fetchCodeAiGenerator = createAsyncThunk(
   async (userMessage, { rejectWithValue }) => {
     try {
       const result = await axios.post("/api/code-generator", { userMessage });
-      console.log(result);
       if (result.status === 200) {
         const data = result.data;
         return data.choices[0]?.message?.content || "No response generated.";
@@ -45,8 +44,8 @@ const codeGeneratorSlice = createSlice({
               img: "/images/icons/loader-one.gif",
               text: "Generating answers for you…",
               aiImg: "/images/team/avater.png",
-              title: "ChatenAI",
-              badge: "Bot",
+              title: "Astrolabs",
+              badge: "Ai",
               desc: "",
             },
           ],
@@ -71,8 +70,8 @@ const codeGeneratorSlice = createSlice({
                 img: "",
                 text: "",
                 aiImg: "/images/team/avater.png",
-                title: "ChatenAI",
-                badge: "Bot",
+                title: "Astrolabs",
+                badge: "Ai",
                 desc: action.payload, // Add the payload as the description
               },
             ],
@@ -88,8 +87,8 @@ const codeGeneratorSlice = createSlice({
                 img: "",
                 text: "",
                 aiImg: "/images/team/avater.png",
-                title: "ChatenAI",
-                badge: "Bot",
+                title: "Astrolabs",
+                badge: "Ai",
                 desc: "Error: " + action.payload,
               },
             ],

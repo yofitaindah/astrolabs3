@@ -69,7 +69,6 @@ const dalleSlice = createSlice({
       })
       // Fulfilled state
       .addCase(generateImage.fulfilled, (state, action) => {
-        console.log("action payload", action.payload);
         state.loading = false;
         const lastMessageIndex = state.messages.length - 1;
         if (lastMessageIndex >= 0) {

@@ -57,8 +57,6 @@ const Form = () => {
   const sendMessage = (e) => {
     e.preventDefault();
     if (!input.trim()) return;
-    console.log(input);
-    console.log(base64Image);
     dispatch(
       addUserMessage(
         {

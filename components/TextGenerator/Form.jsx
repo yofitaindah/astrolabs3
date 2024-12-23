@@ -14,9 +14,9 @@ const Form = () => {
 
   const dispatch = useDispatch();
 
-  const sendMessage = () => {
+  const sendMessage = (e) => {
+    e.preventDefault();
     if (!input.trim()) return;
-    console.log(input);
     dispatch(addUserMessage(input));
     dispatch(addLoadingMessage());
     dispatch(fetchChatAiResponse(input));
